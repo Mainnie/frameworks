@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Frameworks de Desarrollo Web</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><img src="img/logoutc.png" alt="Logo"> Universidad Tecnológica de Coahuila</h1>
+                    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Fundamentos de Front-End</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#concepto" class="dropdown-item">Concepto de Front-End</a>
+                                <a href="#cssyhtml5" class="dropdown-item">Fundamentos de los lenguajes CSS y HTML5</a>
+                                <a href="#lessysass" class="dropdown-item">Lenguajes LESS y SASS</a>
+                                <a href="#herramientas" class="dropdown-item">Herramientas recomendadas para Front-End</a>
+                                <a href="#widgets" class="dropdown-item">¿Qué son los Widgets?</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Diseño Front-End</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#habilidades" class="dropdown-item">Habilidades necesarias para el desarrollar Front-End</a>
+                                <a href="#elementos" class="dropdown-item">Elementos de una página web </a>
+                                <a href="#estructurasemantica" class="dropdown-item">Estructura semántica del sitio web</a>
+                                <a href="#responsivo" class="dropdown-item">¿Qué es el diseño web responsivo?</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Programación Front-End</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#framework" class="dropdown-item">¿Qué es un Framework?</a>
+                                <a href="#ejemplos" class="dropdown-item">Ejemplos de Framework para desarrollo web</a>
+                                <a href="#edit" class="dropdown-item">Editores para programar un sitio Web</a>
+                                <a href="#ajax" class="dropdown-item">¿Qué es Ajax?</a>
+                                <a href="#jquery" class="dropdown-item">¿Qué es jQuery?</a>
+                                <a href="#diferencias" class="dropdown-item">Diferencias entre Ajax y jQuery</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Saber Hacer</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="/frameworks/saberhaceru1/index.html" class="dropdown-item">Saber Hacer 1</a>
+                                <a href="" class="dropdown-item">Saber Hacer 2</a>
+                                <a href="" class="dropdown-item">Saber Hacer 3</a>
+                                <a href="" class="dropdown-item">Saber Hacer 4</a>
+                            </div>
+                        </div>
+
+                        <a href="#inicio" class="nav-item nav-link active">Inicio</a>
+                        <a href="#final" class="nav-item nav-link active">Final</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel" id="inicio">
+                <div class="header-carousel-item">
+                    <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-0 gx-5">
+                                <div class="col-lg-0 col-xl-5"></div>
+                                <div class="col-xl-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">BIENVENIDO A</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">UTC SEARCH</h1>
+                                        <p class="mb-5 fs-5">Aquí encontrarás información relevante para la materia de Frameworks de Desarrollo Web.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row g-5">
+                                <div class="col-12 animated fadeInUp">
+                                    <div class="text-center">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">¿BUSCAS ALGO EN ESPECÍFICO?</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">¡Encuéntralo aquí!</h1>
+                                        <p class="mb-5 fs-5">En esta página web tienes la posibilidad de encontrar toda la información que necesitas para realizar tus trabajos o proyectos.
+                                        </p>
+                                        <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://utc.edu.mx/">PÁGINA UTC</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://aula.utc.edu.mx/login/index.php">AULA VIRTUAL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Abvout Start -->
+        <div class="container-fluid about py-5">
+            
+        </div>
+        <!-- About End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <!-- Música de fondo sin controles visibles -->
+        <audio autoplay loop style="display:none;">
+            <source src="img/DejaVu.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h1 class="display-5 mb-4">FUNDAMENTOS DE FRONT-END</h1>
+                </div>
+                <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item p-4" id="concepto">
+                        <div class="blog-img mb-4">
+                            <img src="img/frontendgirl.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://neoattack.com/neowiki/front-end/" class="h4 d-inline-block mb-3">Concepto de Front-End</a>
+                        <p class="mb-4"> El Front end es la parte de una web que conecta e interactúa con los usuarios que la visitan. Es la parte visible, la que muestra el diseño, los contenidos y la que permite a los visitantes navegar por las diferentes páginas mientras lo deseen. Es una de las dos mitades en las que se divide la estructura de cualquier página web.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4" id="cssyhtml5">
+                        <div class="blog-img mb-4">
+                            <img src="img/htmlycss.jpeg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://nelkodev.com/blog/introduccion-a-html-y-css-dos-pilares-fundamentales-para-el-desarrollo-web/" class="h4 d-inline-block mb-3">Fundamentos de HTML y CSS</a>
+                        <p class="mb-4">
+                            HTML <br>
+                            -Elementos semánticos como header, article, y footer que mejoran la estructura y accesibilidad.<br>
+                            -Soporte multimedia nativo con etiquetas como audio y video, eliminando la necesidad de plugins externos.<br>
+                            -Nuevas APIs como Canvas y Web Storage para gráficos y almacenamiento local en el navegador.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4" id="cssyhtml5">
+                        <div class="blog-img mb-4">
+                            <img src="img/html_css.jpeg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://nelkodev.com/blog/introduccion-a-html-y-css-dos-pilares-fundamentales-para-el-desarrollo-web/" class="h4 d-inline-block mb-3">Fundamentos de HTML y CSS</a>
+                        <p class="mb-4">CSS <br>
+                            -Selección de elementos: Usa selectores para aplicar estilos a elementos HTML.<br>
+                            -Diseño: Facilita el diseño de páginas web con propiedades como margin, padding, flexbox, y grid.<br>
+                            -Responsividad: Las media queries permiten adaptar el diseño a diferentes dispositivos.
+                        </p>
+                    </div>
+                   
+                    <div class="blog-item p-4" id="lessysass">
+                        <div class="blog-img mb-4">
+                            <img src="img/lesss.png" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://www.byronvargas.com/web/que-es-sass-y-less/" class="h4 d-inline-block mb-3">Lenguajes LESS y SASS</a>
+                        <p class="mb-4">LESS (Leaner Style Sheets)<br>
+                            LESS es un preprocesador de CSS que agrega funcionalidad adicional, manteniendo una sintaxis muy similar a CSS. Fue uno de los primeros preprocesadores ampliamente utilizados.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4" id="lessysass">
+                        <div class="blog-img mb-4">
+                            <img src="img/sass-logo.png" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://www.byronvargas.com/web/que-es-sass-y-less/" class="h4 d-inline-block mb-3">Lenguajes LESS y SASS</a>
+                        <p class="mb-4">SASS (Syntactically Awesome Style Sheets)<br>
+                            SASS es otro preprocesador de CSS, con más funcionalidades avanzadas en comparación con LESS. Ofrece dos sintaxis: la original SASS (sin llaves ni punto y coma, similar a Python) y SCSS (una extensión que utiliza la sintaxis CSS estándar).
+                        </p>
+                    </div>
+                    <div class="blog-item p-4" id="widgets">
+                        <div class="blog-img mb-4">
+                            <img src="img/wdts.jpeg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://www.arimetrics.com/glosario-digital/widget" class="h4 d-inline-block mb-3">¿Qué son los Widgets?</a>
+                        <p class="mb-4">Un widget es una pequeña aplicación o programa diseñada para facilitar el acceso a las funciones más usadas de un dispositivo. Su principal característica es que se integran en el escritorio del ordenador o el teléfono móvil y nos ofrecen información visual sin necesidad de ejecutar nada más. Los widgets son gratuitos y se pueden conseguir a través de Internet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;"id="herramientas">
+                    <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3" >HERRAMIENTAS RECOMENDADAS PARA FRONT-END</a>
+                </div>
+                <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/adobecolor.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3">Adobe Color</a>
+                        <p class="mb-4">Antes de que lleves acabo un diseño es posible que necesites elegir el color adecuado, puedes apoyarte e inspirarte con la herramienta Adobe Color (ex Kuler). Con esta herramienta puedes crear, explorar y compartir temas de colores, estos se pueden sincronizar con varios productos de Adobe como Photoshop, Illustrator, entre otros. Si quieres saber más sobre esta herramienta, puedes visitar su página Web.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/wave.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3">Wave</a>
+                        <p class="mb-4">
+                            Mediante esta herramienta podemos analizar la accesibilidad Web de un Sitio Web. La accesibilidad Web es un proceso que hace que el contenido de tu Sitio Web sea accesible de manera adecuada para lo usuarios con  determinada discapacidades. En algunos países existen leyes que los Sitios Webs deben cumplir para mantener los estándares de accesibilidad establecidos por la W3C (Organización que da soporte a varias tecnologías como HTML 5). Si quieres saber más sobre esta herramienta, puedes visitar su página Web.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/browerstack.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3">BrowserStack</a>
+                        <p class="mb-4">Mediante esta herramienta podrás hacer Cross Browser Testing, te permite hacer una evaluación de como funciona un Sitio Web en diferentes modelos de dispositivos y navegadores Web. BrowserStack utiliza Servidor Selenium para automatizar las pruebas con dispositivos reales guardados en ubicaciones remotas. Al finalizar una prueba, puedes acceder a capturas de pantallas y videos con los resultados. Si quieres saber más sobre esta herramienta, puedes visitar su página Web.
+                        </p>
+                    </div>
+                   
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/bit.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3">Bit</a>
+                        <p class="mb-4">Bit se esta convirtiendo en una de las plataformas favoritas de muchos Desarrolladores, esta plataforma permite compartir, subir y usar componentes, varios de los componentes que se alojan en Bit, han sido publicados por otros Desarrolladores. Con Bit se puede crear ciertas funcionalidades de manera ágil, si encuentras el componente que estabas necesitando, solo bájalo y úsalo. Si quieres saber más sobre esta herramienta, puedes visitar su página Web.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/woorank.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3">WooRank</a>
+                        <p class="mb-4">Esta herramienta es popular en el área de SEO, pero los datos que esta plataforma de análisis de Sitios Webs nos devuelve son muy importantes y debemos tomarlos en cuenta y proceder a corregir los errores que nos menciona esta plataforma. WooRank nos brinda muchos consejos sobre el contenido, seguridad, enlaces, etc. Si el proyecto tendrá trabajo de SEO en el futuro, conociendo los datos que nos brinda esta plataforma, vas a saber orientar tu diseño al proceso de SEO. Si quieres saber más sobre esta herramienta, puedes visitar su página Web.
+                        </p>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/Vecteezy.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <a href="https://blog.nubecolectiva.com/6-herramientas-recomendadas-para-front-end-developers/" class="h4 d-inline-block mb-3">Vecteezy</a>
+                        <p class="mb-4">En esta plataforma puedes encontrar miles de vectores y gráficos diseñados por otros usuarios, si necesitas un Gráfico rápidamente e insertarlo en tu Sitio Web, puedes utilizar su buscador para encontrar el diseño que necesitas y descargarlo, eso si no olvides darle crédito a la página. Si quieres saber más sobre esta herramienta, puedes visitar su página Web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- FAQs Start -->
+<div class="container-fluid faq-section pb-5">
+    <div class="container pb-5 overflow-hidden">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h1 class="display-5 mb-4"id="habilidades">DISEÑO FRONT-END</h1>           
+            <a href="https://medium.com/@kenruizinoue/10-habilidades-necesarias-para-ser-un-desarrollador-front-end-473635bec546" class="h4 d-inline-block mb-3" >HABILIDADES NECESARIAS PARA DESARROLLAR FRONT-END</a>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="accordion accordion-flush bg-light rounded p-5" id="accordionFlushSection">
+                    <div class="accordion-item rounded-top">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                1. HTML/CSS/JavaScript
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Es imposible ser un desarrollador front end si no dominas estos 3 lenguajes. Con HTML, CSS y JavaScript por primera vez las aplicaciones cobran vida. Dale mucha prioridad en dominar estos 3 lenguajes, en especial JavaScript. Hoy en día, muchas empresas son atraídas por los desarrolladores que dominan JavaScript, ya que el lenguaje es versátil y sirve para otros propósitos como desarrollo móvil, back end y más.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                2. Frameworks/Librerías de JavaScript
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Una vez que hayas aprendido JavaScript a un nivel considerable (intermedio), es momento de aprender a utilizar un framework o librería. Angular y React son las tecnologías más famosas de JavaScript en la industria IT. Si dominas Angular o React, da por hecho que encontrarás trabajo sí o sí. Si vienes de un mundo orientado a objetos (Java, C#, etc.), Angular será lo tuyo. La ventaja de React es que utiliza JavaScript puro, entre mejor te vuelves en React, mejor te vuelves en JavaScript. jQuery es (era) una librería muy famosa, pero muchas empresas han optado por dejar de usarla por muchas razones. Actualmente se buscan desarrolladores que puedan hacer lo que hace jQuery únicamente con JavaScript.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                3. Frameworks/Pre Procesadores de CSS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">También existen frameworks para CSS muy famosos como Bootstrap y Foundation. Un desarrollador que domina estos frameworks aporta mucho valor para la creación de UI (interfaz de usuario). También es importante que domines algún preprocesador de CSS. Los preprocesadores te permiten llevar al siguiente nivel el CSS. Existen opciones famosas como Sass, Less y Stylus. Escribir en CSS se ha vuelto rápido, didáctico y sencillo gracias a los preprocesadores.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                4. Diseño
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Un desarrollador front end necesita tener un ojo crítico para el diseño. Es cierto que se buscan desarrollador que cuenten con nociones básicas del diseño UI (interfaz de usuario) y UX (experiencia de usuario) para crear aplicaciones atractivas y fáciles de usar. Otro aspecto importante a considerar es el diseño responsive, hoy en día las aplicaciones se consumen a través de distintos tamaños de dispositivos. Saber adaptar el diseño en diferentes tamaños de pantallas es una habilidad muy demandada.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                5. Línea de Comandos/Versión de Control
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">No tienes que ser un experto en la línea de comandos, pero sí saber manejar muy bien administrador de paquetes como npm o yarn. La mayoría de los proyectos que se crean con JavaScript, hacen uso de administrador de paquetes. Otra tecnología que se utiliza mucho para el desarrollo es el sistema de versión de control, en especial Git. Dominar Git y plataformas como GitHub o GitLab son habilidades indispensables para trabajar en un equipo de desarrollo.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-bottom">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                6. Pruebas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Las pruebas sirven para prevenir errores inesperados en un futuro. Cada vez que creas una nueva funcionalidad o realices un cambio en la aplicación, las pruebas se vuelven indispensables para detectar errores a tiempo, para ahorrarte el tiempo de búsqueda del error. Aprende a utilizar Jest para crear pruebas unitarias o de integración. Para realizar pruebas funcionales aprende Cypress. También es importante realizar pruebas de rendimiento. Utiliza herramientas como PageSpeed Insights para saber si la aplicación tiene un rendimiento aceptable.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                7. Herramientas de Automatización
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Un buen desarrollador sabe valorar su tiempo y se preocupa mucho por automatizar y optimizar sus tareas. Webpack es una de las tecnologías más amadas para automatizar el proceso de desarrollo, además de crear aplicaciones con un buen rendimiento. Usar herramientas como ESLint (revisa tu código) y Prettier (le da formato al código) en tu editor de texto también ahorra tiempo a lo largo del desarrollo. Con ESLint Puedes definir reglas para crear un estándar de código dentro del equipo de desarrollo. Aprender a configurar estas 2 herramientas te serán de gran utilidad.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                8. Herramientas del Navegador
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Una de las herramientas (dev tools) más poderosas son las de Google Chrome. Puedes inspeccionar el DOM, realizar debugging, simular diferentes tipos de conexiones, pruebas de rendimiento y más. Saber utilizar estas herramientas a la perfección hace la diferencia entre un desarrollador front end profesional y no profesional.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                9. APIs/CMS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">Saber crear APIs con RESTful o GraphQL es una habilidad indispensable para hacer que las aplicaciones interactúen con información externa. Recomiendo mucho aprender GraphQL, ya que se ha vuelto muy popular en estos años debido a su eficiencia. El CMS (sistema de gestión de contenidos) también es otro tema importante a considerar. Muchas empresas y negocios necesitan alimentar sus sitios o aplicaciones con contenido (como este artículo). Se pueden utilizar plataformas como Contentful o GraphCMS para administrar el contenido sin depender de plataformas como Wordpress o Drupal.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                10. Habilidades Blandas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushSection">
+                            <div class="accordion-body">De nada sirve contar con las habilidades mencionadas si no tienes habilidades blandas. Todo desarrollador debe contar con las siguientes habilidades blandas:
+                                <br>
+                                Comunicación efectiva: No existe algo más frustrante que un compañero o jefe que no sabe comunicar sus ideas o pensamientos. No le quites tiempo a las personas con explicaciones o detalles innecesarios, aprende a comunicarte de manera concreta y resumida. <br>
+                                Trabajo en equipo: Ninguna aplicación web famosa que conoces se creó con un solo desarrollador, detrás de la aplicación existe un equipo maravilloso que hace que funcionen las cosas. Aprende a trabajar en equipo de manera eficiente para alcanzar las metas lo antes posible. <br>
+                                Resolución de problemas: Es una habilidad que requiere tiempo para desarrollarla, ten una mentalidad enfocada en resolver los problemas en vez de generarlos. Trata de siempre encontrar la solución más adecuada y óptima para cada escenario. <br>
+                                Aceptar críticas y errores: Permítete equivocarte más, vivimos en una cultura donde vemos como un tabú el error, pero encuentra el valor en equivocarte y aprender. Rodéate de personas que aprenden de sus errores y están dispuestos darte una crítica para que seas mejor. Deja tu orgullo a un lado para que puedas ser una versión mejor de ti. <br>
+                                Buena administración del tiempo: El tiempo es el único recurso que no podemos recuperar, busca ser eficiente constantemente, ponte límites de tiempo y plena cada mañana lo que harás en el día. <br>
+                                Aprendizaje constante: El mundo del desarrollo evoluciona a una velocidad sorprendente. Tienes que estar dispuesto a aprender de manera constante y hazlo con gusto. Si no estás en actualizar tus habilidades serás fácil de reemplazar y triunfar en este mundo será difícil.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="bg-primary rounded">
+                    <img src="img/about-2.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FAQs End -->
+
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;" id="elementos">
+            <a href="https://www.cualhost.com/marketing-en-linea/elementos-de-una-pagina-web-exitosa/" class="h4 d-inline-block mb-3">ELEMENTOS DE UNA PÁGINA WEB</a>
+        </div>
+        <div class="bg-primary rounded">
+            <img src="img/elementos-de-una-pag-web.jpg" class="img-fluid w-100" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;" id="estructurasemantica">
+            <a href="https://desarrolladoresweb.org/html5/estructura-de-una-pagina-html5/" class="h4 d-inline-block mb-3">ESTRUCTURA SEMÁNTICA DEL SITIO WEB</a>
+        </div>
+        <div class="bg-primary rounded">
+            <img src="img/estructura-de-una-pagina-en-HTML5.jpg" class="img-fluid w-100" alt="">
+        </div>
+    </div>
+</div>
+        <!-- Services Start -->
+        <div class="container-fluid service pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h1 class="display-5 mb-4">PROGRAMACIÓN FRONT-END</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" id="responsivo">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/diseno-web-responsivo.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="https://www.cyberclick.es/que-es/diseno-web-responsive" class="h4 d-inline-block mb-4">¿Qué es el Diseño Web Responsive?</a>
+                                <p class="mb-4">Es capaz de adaptarse a pantallas de diferentes tamaños con un solo sitio web. El sistema detecta automáticamente el ancho de la pantalla y a partir de ahí adapta todos los elementos de la página, desde el tamaño de letra hasta las imágenes y los menús, para ofrecer al usuario la mejor experiencia posible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" id="framework">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/frameworksss.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">¿Qué es un Framework?</a>
+                                <p class="mb-4">Un framework es un marco o esquema de trabajo generalmente utilizado por programadores para realizar el desarrollo de software. Utilizar un framework permite agilizar los procesos de desarrollo ya que evita tener que escribir código de forma repetitiva, asegura unas buenas prácticas y la consistencia del código. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s" id="ejemplos">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/phpframeworks.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4" id="editores">
+                                <a href="https://blog.nubecolectiva.com/los-5-mejores-frameworks-css-para-desarrolladores-en-2020/" class="h4 d-inline-block mb-4">Ejemplos de Framework para desarrollo web</a>
+                                <p class="mb-4">Los mejores Frameworks CSS:
+                                    <br>
+                                    -Bootstrap <br>
+                                    -Tailwind CSS <br>
+                                    -Foundation <br>
+                                    -Pure CSS <br>
+                                    -Bulma
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="https://blog.nubecolectiva.com/los-5-mejores-frameworks-css-para-desarrolladores-en-2020/">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" id="ajax">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/ajax.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="https://es.ryte.com/wiki/AJAX" class="h4 d-inline-block mb-4">¿Qué es Ajax?</a>
+                                <p class="mb-4">Denota una técnica basada en la tecnología JavaScript que cambia la comunicación con el servidor y acelera las aplicaciones web. Las interfaces funcionan más rápido con transferencia de datos retardada (asíncrona). Con AJAX, las aplicaciones web pueden intercambiar datos con el servidor en segundo plano sin necesidad de recargar toda la página. AJAX es una herramienta muy poderosa pero no puede utilizarse con HTML simple. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s" id="jquery">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/jquery.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="https://blog.hubspot.es/website/que-es-jquery" class="h4 d-inline-block mb-4">¿Qué es jQuery?</a>
+                                <p class="mb-4">jQuery es una biblioteca de JavaScript que se utiliza para simplificar la creación de páginas web dinámicas e interactivas. Permite a los desarrolladores acceder y manipular fácilmente el DOM (Document Object Model) de una página web, lo que significa que con ella pueden agregar, eliminar y modificar elementos HTML, aplicar efectos y animaciones, interactuar con formularios y otros elementos de entrada de usuario, y más.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s" id="diferencias">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/jqueryvsajax.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="https://es.differkinome.com/articles/programming/difference-between-ajax-and-jquery.html" class="h4 d-inline-block mb-4">Diferencias entre Ajax y jQuery</a>
+                                <p class="mb-4">jQuery es una biblioteca de JavaScript que simplifica el recorrido de documentos HTML, el manejo de eventos y la animación. Al mismo tiempo, AJAX (JavaScript asíncrono y XML) es una técnica utilizada para crear páginas web rápidas y dinámicas.
+                                    jQuery proporciona una sintaxis simplificada para realizar tareas comunes de JavaScript, mientras que AJAX envía y recibe datos de forma asíncrona sin recargar toda la página web.
+                                    jQuery es una biblioteca independiente que se puede usar con o sin AJAX.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Offer Start -->
+        <div class="container-fluid offer-section pb-5">
+            <div class="container pb-5" id="edit">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <a href="https://kinsta.com/es/blog/herramientas-desarrollo-web/" class="h4 d-inline-block mb-3">EDITORES PARA PROGRAMAR UN SITIO WEB</a>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="nav nav-pills bg-light rounded p-5">
+                            <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                                <h5 class="mb-0">VISUAL STUDIO CODE</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                                <h5 class="mb-0">SUBLIME TEXT</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                                <h5 class="mb-0">ATOM</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
+                                <h5 class="mb-0">JETBRAINS SUITE</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s" id="editores">
+                        <div class="tab-content">
+                            <div id="collapseOne" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/vscode-editor.png" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">VSC</h1>
+                                        <p class="mb-4">Es un editor de código abierto desarrollado por Microsoft que ofrece lo suficiente en la caja para ser considerado un IDE. En su configuración por defecto, Visual Studio Code es ante todo un editor de texto. Visual Studio Code es compatible con JavaScript, Node.js y TypeScript desde el principio. Sin embargo, el ecosistema de extensiones es tan rico que podrás encontrar algo de soporte el lenguaje que estés usando. Visual Studio es completamente gratuito.
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="https://kinsta.com/es/blog/herramientas-desarrollo-web/">Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/sublime-text.png" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">SUBLIME TEXT</h1>
+                                        <p class="mb-4">Es un pilar dentro del mundo de los editores de texto. Es más reducido que la mayoría de las otras soluciones, aunque su apariencia miente sobre la potencia que hay bajo el capó. Sublime Text es una herramienta premium con un periodo de prueba muy liberal. Se puede considerar gratuita, pero para retribuir al desarrollador, deberías comprar una licencia para un uso extendido. Sublime Text ofrece una gran experiencia de usuario (UX), proporcionando lo esencial (agradables efectos visuales, su diseño sencillo y su capacidad de ampliación).
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="https://kinsta.com/es/blog/herramientas-desarrollo-web/">Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/atom.png" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">ATOM</h1>
+                                        <p class="mb-4">Es una aplicación desarrollada por GitHub, lo que puede explicar por qué ha sido empujada hacia abajo en la jerarquía de Microsoft. Sin embargo, se actualiza regularmente y puede considerarse una versión alternativa de Visual Studio Code. La edición de texto es funcional y, al igual que su hermano mayor, tiene integración con GitHub. También hay muchos complementos llamados «paquetes».Atom está construido sobre Electron (sin juego de palabras), algunos usuarios se han quejado de que los archivos grandes y los proyectos se ejecutan lentamente. 
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="https://kinsta.com/es/blog/herramientas-desarrollo-web/">Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/intellij-idea.png" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">JETBRAINS SUITE</h1>
+                                        <p class="mb-4">Cuando se trata de IDEs de desarrollo, el conjunto de soluciones de JetBrains va a estar en la parte superior de tu lista. El modelo de negocio es inteligente, ya que aunque hay muchos editores disponibles en JetBrains, todos son en realidad «subconjuntos» de su editor estrella, IntelliJ IDEA. JetBrains ha hecho un gran trabajo para que puedas codificar en lugar de meterte en configuraciones y ajustes. 
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="https://kinsta.com/es/blog/herramientas-desarrollo-web/">Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container" id="final">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Mainnieloves</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">Mainnieloves Developers</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">Mainnieloves Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
