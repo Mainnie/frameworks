@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen HTML - Preguntas</title>
+    <link rel="stylesheet" href="css/questions.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pregunta <span id="currentQuestionNumber">1</span> de 15</h1>
+        <form id="quizForm">
+            <p id="questionText"></p>
+            <input type="radio" name="answer" id="option1" value="0">
+            <label for="option1" id="label1"></label><br>
+            <input type="radio" name="answer" id="option2" value="1">
+            <label for="option2" id="label2"></label><br>
+            <input type="radio" name="answer" id="option3" value="2">
+            <label for="option3" id="label3"></label><br>
+            <input type="radio" name="answer" id="option4" value="3">
+            <label for="option4" id="label4"></label><br>
+            <button type="submit">Siguiente</button>
+        </form>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: '1. Una página con extensión htm o html comienza por html (entre signos mayor y menor)',
+                options: ['Verdadero', 'Falso'],
+                correct: 0
+            },
+            {
+                question: '2. El title se encuentra dentro del body en una página web',
+                options: ['Verdadero', 'Falso'],
+                correct: 1
+            },
+            {
+                question: '3. ¿Qué entiende por HTML?',
+                options: ['Hyper Text Mask Language', 'Hard Text Markup Language', 'Hyper Text Markup Language', 'Hiper Type Markup Language'],
+                correct: 2
+            },
+            {
+                question: '4. ¿Qué etiqueta utilizamos para definir el cuerpo del documento?',
+                options: ['background', 'body', 'b', 'big'],
+                correct: 1
+            },
+            {
+                question: '5. ¿Qué etiqueta utilizamos para insertar una línea horizontal?',
+                options: ['br', 'hr', 'line', 'wbr'],
+                correct: 1
+            },
+            {
+                question: '6. ¿Cuál es la forma correcta de insertar un comentario?',
+                options: ['"<!--...-->"', '<¡--...--!>', '<comment>', '<meta>'],
+                correct: 0
+            },
+            {
+                question: '7. Elija la etiqueta apropiada para un texto en negrita.',
+                options: ['bold', 'bb', 'b', 'big'],
+                correct: 2
+            },
+            {
+                question: '8. Elija la forma correcta de ingresar una imagen.',
+                options: ['<img src="foto.jpg">', '<imagen src="foto.jpg">', '<img href="foto.jpg">', '<background src="foto.jpg">'],
+                correct: 0
+            },
+            {
+                question: '9. ¿Qué etiqueta define un salto de línea?',
+                options: ['br', 'break', 'linebreak', 'p'],
+                correct: 0
+            },
+            {
+                question: '10. Elija la etiqueta que nos da el título más grande',
+                options: ['h1', 'h6', 'head', 'big'],
+                correct: 0
+            },
+            {
+                question: '11. La etiqueta center',
+                options: ['Permite cambiar el tamaño del texto.', 'Permite insertar un texto como título.', 'Permite centrar el texto.', 'Permite seleccionar el texto.'],
+                correct: 2
+            },
+            {
+                question: '12. El color de fondo de una página...',
+                options: ['Se especifica en la etiqueta body.', 'Puede establecerse a través del atributo bgcolor.', 'Las dos afirmaciones anteriores son verdaderas.', 'Las tres afirmaciones anteriores son falsas.'],
+                correct: 2
+            },
+            {
+                question: '13. Para definir el fondo de la página se utiliza:',
+                options: ['<FONT COLOR="RED">los guardianes azules </font>', '<FONT SIZE="1">cada día seré mejor </FONT>', '<p align="center">la mejor musica</p>', '<body bg color=”#00ff00”>'],
+                correct: 3
+            },
+            {
+                question: '14. La etiqueta define cada día seré mejor :',
+                options: ['El tipo de letra', 'El color de la letra', 'El tamaño de la letra', 'El tipo de letra para un titulo'],
+                correct: 2
+            },
+            {
+                question: '15. En el body se puede:',
+                options: ['Insertar imágenes, texto, tablas y fondos', 'Generar solo formularios, enlaces y videos', 'Solamente se define el título', 'Respuestas a y b'],
+                correct: 0
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const currentData = questions[currentQuestion];
+            document.getElementById('currentQuestionNumber').textContent = currentQuestion + 1;
+            document.getElementById('questionText').textContent = currentData.question;
+            document.getElementById('label1').textContent = currentData.options[0];
+            document.getElementById('label2').textContent = currentData.options[1];
+            
+            if (currentData.options.length > 2) {
+                document.getElementById('label3').style.display = 'inline';
+                document.getElementById('option3').style.display = 'inline';
+                document.getElementById('label3').textContent = currentData.options[2];
+
+                if (currentData.options.length > 3) {
+                    document.getElementById('label4').style.display = 'inline';
+                    document.getElementById('option4').style.display = 'inline';
+                    document.getElementById('label4').textContent = currentData.options[3];
+                } else {
+                    document.getElementById('label4').style.display = 'none';
+                    document.getElementById('option4').style.display = 'none';
+                }
+            } else {
+                document.getElementById('label3').style.display = 'none';
+                document.getElementById('option3').style.display = 'none';
+                document.getElementById('label4').style.display = 'none';
+                document.getElementById('option4').style.display = 'none';
+            }
+        }
+
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedOption = document.querySelector('input[name="answer"]:checked');
+            if (!selectedOption) {
+                alert('Por favor, selecciona una respuesta.');
+                return;
+            }
+
+            const answer = parseInt(selectedOption.value);
+            if (answer === questions[currentQuestion].correct) {
+                score++;
+            }
+
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                loadQuestion();
+            } else {
+                localStorage.setItem('score', score);
+                window.location.href = 'result.html';
+            }
+        });
+
+        // Cargar la primera pregunta
+        loadQuestion();
+    </script>
+</body>
+</html>
